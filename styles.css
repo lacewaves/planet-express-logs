@@ -1,0 +1,25 @@
+body { background-color:white;
+}
+
+h1 {
+  font-size:30px;
+  font-family:Futura, sans-serif;
+  color:#F30000;
+  padding-top:30px
+}
+
+table {
+background-color: #71E4A1; }
+
+thead {
+  font-size:20px;
+  font-family:Futura, sans-serif;
+  color:#F30000;
+}
+
+tbody {
+  border:none;
+  font-size:16px;
+  font-family:Helvetica, sans-serif;
+  color: #000000;
+}

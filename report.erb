@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+      <div class="col-md-4"><center><img src="https://julianish.files.wordpress.com/2013/03/bender13.gif" width="100px"></center></div>
+      <div class="col-md-8"><h1>Planet Express Logs: <small>We made <%= total_revenue %>!</small></h1></div>
+<br>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Destination</th>
+          <th>Shipment</th>
+          <th>Crates</th>
+          <th>Money</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% destinations.each do |destination| %>
+          <tr>
+            <td><%= destination["Destination"] %></td>
+            <td><%= destination["Shipment"] %></td>
+            <td><%= destination["Crates"] %></td>
+            <td><%= destination["Money"] %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </body>
+</html>
