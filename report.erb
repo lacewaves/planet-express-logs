@@ -8,8 +8,13 @@
 
   <body>
       <div class="col-md-4"><center><img src="https://julianish.files.wordpress.com/2013/03/bender13.gif" width="100px"></center></div>
-      <div class="col-md-8"><h1>Planet Express Logs: <small>We made <%= total_revenue %>!</small></h1></div>
+      <div class="col-md-8"><h1>Planet Express Logs: <small>We made <%= total_revenue %>!</small></h1>
+          <p>Bender made <%= bender.count %> trip(s): <%= bender_total %> for a bonus of <%= bender_bonus %></p>
+          <p>Fry made <%= fry.count %> trip(s): <%= fry_total %> for a bonus of <%= fry_bonus %></p>
+          <p>Amy made <%= amy.count %> trip(s): <%= amy_total %> for a bonus of <%= amy_bonus %></p>
+          <p>Leela made <%= leela.count %> trip(s): <%= leela_total %> for a bonus of <%= leela_bonus %></p></div>
 <br>
+
     <table class="table">
       <thead>
         <tr>
